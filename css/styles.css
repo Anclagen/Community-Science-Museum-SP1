@@ -292,8 +292,8 @@ footer input {
   text-decoration: none;
   display: block;
   text-align: center;
-  padding: 6px 20px;
-  width: 136px;
+  padding: 6px 0px;
+  width: 100px;
   background: var(--purple);
   border-radius: 5px;
   margin: 0 auto;
@@ -323,11 +323,13 @@ footer input {
   height: fit-content;
 }
 
+.heading-background h2,
 .heading-background h1 {
   margin: 0 0 20px 0;
   padding: 20px 0px;
 }
 
+.sub-heading-image img,
 .heading-image img {
   width: 100%;
 }
@@ -335,6 +337,12 @@ footer input {
 .heading-container {
   position: relative;
   max-height: 400px;
+  overflow: hidden;
+}
+
+.sub-heading-container {
+  position: relative;
+  max-height: 300px;
   overflow: hidden;
 }
 
@@ -347,7 +355,6 @@ footer input {
 }
 
 .heading-text {
-  margin-left: 20px;
   width: 100%;
   z-index: 10;
   text-align: center;
@@ -357,7 +364,7 @@ footer input {
 
 .card-item {
   background: var(--grey);
-  padding: 30px;
+  padding: 15px;
   margin: 20px 0;
   border-radius: 5px;
   box-shadow: 5px 5px 5px var(--purple);
@@ -385,7 +392,12 @@ footer input {
 
 .card-layout-grid {
   display: grid;
-  grid-column: 1fr;
+  gap: 20px;
+}
+
+.card-double-button {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 600px) {
@@ -405,7 +417,6 @@ footer input {
   .card-layout-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
   }
 }
 
@@ -421,6 +432,10 @@ footer input {
   /*heading template*/
   .heading-container {
     max-height: 500px;
+  }
+
+  .sub-heading-container {
+    max-height: 400px;
   }
 
   .heading-overlay {
@@ -439,12 +454,17 @@ footer input {
     justify-content: space-between;
   }
 
+  .sub-heading-image,
   .heading-image {
     flex: 2;
     width: 66.67vw;
     max-width: 800px;
     position: relative;
     height: 500px;
+  }
+
+  .sub-heading-image {
+    height: 300px;
   }
 
   .heading-image img {
@@ -459,6 +479,7 @@ footer input {
     max-width: 400px;
     display: flex;
     align-items: center;
+    margin-left: 40px;
   }
 
   header label {
@@ -525,6 +546,5 @@ footer input {
   .card-layout-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
   }
 }
