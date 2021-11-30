@@ -364,7 +364,7 @@ footer input {
 }
 
 /*cards*/
-
+.card-item-nohover,
 .card-item {
   background: var(--grey);
   padding: 15px;
@@ -379,10 +379,12 @@ footer input {
   align-content: space-between;
 }
 
+.card-item-nohover img,
 .card-item img {
   width: 100%;
 }
 
+.card-item-nohover h3,
 .card-item h3 {
   margin-top: 0;
 }
@@ -393,6 +395,8 @@ footer input {
   transition: 0.5s;
 }
 
+/*stops hover wobble from margin cascade*/
+.card-layout-grid-double,
 .card-layout-grid {
   display: grid;
   gap: 20px;
@@ -417,6 +421,7 @@ footer input {
     font-size: 3.1vw;
   }
 
+  .card-layout-grid-double,
   .card-layout-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
