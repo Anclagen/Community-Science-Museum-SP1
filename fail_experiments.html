@@ -1,0 +1,109 @@
+<!--image carousel-->
+<div class="image-carousel-container">
+  <div class="image-carousel">
+    <div class="slider">
+      <input type="radio" name="image-carousel-radio" id="radio-image-1" checked="" />
+      <input type="radio" name="image-carousel-radio" id="radio-image-2" />
+      <input type="radio" name="image-carousel-radio" id="radio-image-3" />
+      <input type="radio" name="image-carousel-radio" id="radio-image-4" />
+      <input type="radio" name="image-carousel-radio" id="radio-image-5" />
+      <div class="image-1">
+        <img src="images/resized/cosmology_stars_nebular.jpg" alt="" />
+      </div>
+      <div class="image-2">
+        <img src="images/resized/cosmology_stars1.jpg" alt="" />
+      </div>
+      <div class="image-3">
+        <img src="images/resized/cosmology_stars_nebular.jpg" alt="" />
+      </div>
+      <div class="image-4">
+        <img src="images/resized/cosmology_stars1.jpg" alt="" />
+      </div>
+      <div class="image-5">
+        <img src="images/resized/cosmology_stars_nebular.jpg" alt="" />
+      </div>
+      <div class="image-carousel-buttons">
+        <label for="radio-image-1"></label>
+        <label for="radio-image-2"></label>
+        <label for="radio-image-3"></label>
+        <label for="radio-image-4"></label>
+        <label for="radio-image-5"></label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+  .image-carousel-container {
+  position: relative;
+}
+
+.image-carousel {
+  position: relative;
+  overflow: ;
+}
+
+.slider {
+  display: flex;
+  width: 500%;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5 {
+  height: 100%;
+}
+
+.image-carousel-buttons {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -ms-transform: translatex(-50%);
+  transform: translatex(-50%);
+}
+
+.slider input[type="radio"] {
+  display: none;
+  position: a;
+}
+
+.image-carousel-buttons label {
+  display: inline-block;
+  content: "";
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--purple);
+  border-radius: 50%;
+  background: #4e11bf40;
+}
+
+/*Image waltz*/
+#radio-image-1:checked ~ .image-1 {
+  margin-left: 0;
+  transition: 1s;
+}
+
+#radio-image-2:checked ~ .image-1 {
+  margin-left: -20%;
+  transition: 1s;
+}
+
+#radio-image-3:checked ~ .image-1 {
+  margin-left: -40%;
+  transition: 1s;
+}
+
+#radio-image-4:checked ~ .image-1 {
+  margin-left: -60%;
+  transition: 1s;
+}
+
+#radio-image-5:checked ~ .image-1 {
+  margin-left: -80%;
+  transition: 1s;
+}
+-->

@@ -64,6 +64,63 @@
             <div class="heading-text"><h1>Explore</h1></div>
           </div>
         </div>
+        <div class="page-wrapper card-layout-grid">
+          <div>
+            <div class="card-item-nohover">
+              <h3>How to get in touch</h3>
+              <p>For queries regarding exhibits, events and school visits, please fill out a query form.</p>
+              <p>
+                For inquiries about internships, research collaborations, facilities usage and volunteering, use the email provided:
+                <a href="mailto:#" class="email-involved">CSM_Get_Involved@csm.no</a>
+              </p>
+            </div>
+            <div class="card-item-nohover">
+              <h3>Donations</h3>
+              <p>Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.</p>
+              <p>
+                You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by
+                contacting our Collections Department by email: <a href="mailto:#" class="email-involved">CSM_Collections@csm.no</a>
+              </p>
+            </div>
+          </div>
+          <div class="card-item-nohover">
+            <h3>Query Form</h3>
+            <form class="query-form">
+              <label for="fullname">Full Name*</label>
+              <input type="text" name="fullname" id="fullname" required="" />
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required="" />
+              <label for="subject">Subject*</label>
+              <input type="text" name="subject" id="subject" required="" />
+              <label for="message">Message*</label>
+              <textarea name="message" id="message" required=""></textarea>
+              <input type="submit" value="Submit" class="cta cta-orange" />
+            </form>
+          </div>
+          <div class="card-item-nohover">
+            <h3>Guided Tour Booking Form</h3>
+            <form class="booking-form">
+              <label for="fullname-booking">Full Name*</label>
+              <input type="text" name="fullname-booking" id="fullname-booking" required="" />
+              <label for="email-booking">Email*</label>
+              <input type="email" id="email-booking" name="email-booking" required="" />
+              <label for="date">Date (dd/mm/yyyy)</label>
+              <input type="date" name="date" />
+              <label for="time">Time:</label>
+              <select name="time" id="time" required="">
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+              </select>
+              <label for="party-size">Party Size</label>
+              <input type="number" name="party-size" id="party-size" required="" />
+              <input type="submit" value="Book" class="cta cta-orange" />
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
