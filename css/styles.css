@@ -98,7 +98,7 @@ footer a {
 
 .page-wrapper-small,
 .page-wrapper {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
@@ -107,6 +107,9 @@ footer a {
   max-width: 900px;
 }
 
+.header-full-size {
+  display: none;
+}
 /*navigation bar*/
 
 li a {
@@ -433,7 +436,9 @@ footer input {
   display: flex;
   justify-content: space-between;
 }
+
 /*Events page*/
+
 .image-carousel-container {
   position: relative;
 }
@@ -627,6 +632,11 @@ input[type="number"] {
 
 /*visit page*/
 
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
 @media only screen and (min-width: 600px) {
   .logo-img img {
     width: 15vw;
@@ -686,7 +696,7 @@ input[type="number"] {
     height: 100%;
     background: linear-gradient(-0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
   }
-
+  .sub-heading-wrapper,
   .heading-wrapper {
     max-width: 1300px;
     margin: 0 auto;
@@ -799,11 +809,16 @@ input[type="number"] {
   footer ul {
     margin-left: 20px;
   }
+
+  iframe {
+    width: 100%;
+    height: 600px;
+  }
 }
 
 @media only screen and (min-width: 905px) {
   .header-wrapper {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -855,5 +870,27 @@ input[type="number"] {
   .exhibits-wrapper {
     max-width: 1920px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  /*headers to 1920 width for full screen*/
+  .heading-wrapper {
+    max-width: 1920px;
+  }
+
+  .header-medium-size {
+    display: none;
+  }
+
+  .header-full-size {
+    display: block;
+  }
+  .heading-image img,
+  .heading-image {
+    max-width: 1280px;
+  }
+  .heading-image img {
+    width: auto;
   }
 }
