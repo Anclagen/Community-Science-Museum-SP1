@@ -64,6 +64,12 @@ header {
 
 header {
   height: 95px;
+  position: fixed;
+  z-index: 1000;
+}
+
+main {
+  margin-top: 95px;
 }
 
 p a {
@@ -240,6 +246,52 @@ ul li div a {
 
 /*Footer*/
 
+.social-media {
+  display: flex;
+}
+
+.social-media-icons {
+  width: 100%;
+}
+
+.twitter,
+.instagram,
+.facebook,
+.youtube {
+  background-image: url(../images/icon-awesome-youtube.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 48px;
+}
+
+.youtube:hover {
+  background-image: url(../images/icon-awesome-youtube-red.png);
+}
+
+.twitter {
+  background-image: url(../images/icon-awesome-twitter.png);
+}
+
+.twitter:hover {
+  background-image: url(../images/icon-awesome-twitter-blue.png);
+}
+
+.instagram {
+  background-image: url(../images/icon-awesome-instagram.png);
+}
+
+.instagram:hover {
+  background-image: url(../images/icon-awesome-instagram-purple.png);
+}
+
+.facebook {
+  background-image: url(../images/icon-awesome-facebook.png);
+}
+
+.facebook:hover {
+  background-image: url(../images/icon-awesome-facebook-blue.png);
+}
+
 footer address {
   font-style: normal;
 }
@@ -411,8 +463,8 @@ footer input {
   background: var(--grey);
   padding: 15px;
   margin: 20px 0;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px var(--black);
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px var(--black);
 }
 
 .card-item-grid {
@@ -432,7 +484,7 @@ footer input {
 }
 
 .card-item:hover {
-  box-shadow: 15px 15px 5px var(--black);
+  box-shadow: 10px 10px 3px var(--black);
   margin: 10px 10px 30px -10px;
   transition: 0.5s;
 }
@@ -683,9 +735,6 @@ iframe {
   }
 }
 
-@media only screen and (min-width: 700px) {
-}
-
 @media only screen and (min-width: 875px) {
   :root {
     --h1: 3.75rem;
@@ -756,6 +805,14 @@ iframe {
   }
 
   /*fix drop down when expanding to desktop*/
+  header {
+    position: relative;
+  }
+
+  main {
+    margin-top: 0px;
+  }
+
   #menu-drop-down:checked ~ ul,
   nav ul,
   nav ul div {
