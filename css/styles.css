@@ -226,6 +226,18 @@ ul li div a {
   width: fit-content;
 }
 
+.drop-down-hover-content a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 5px solid var(--grey);
+  border-bottom: 5px solid transparent;
+  left: -13px;
+  top: 9px;
+}
+
 /*Footer*/
 
 footer address {
@@ -699,6 +711,7 @@ iframe {
   .sub-heading-wrapper,
   .heading-wrapper {
     max-width: 1300px;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
@@ -886,11 +899,21 @@ iframe {
   .header-full-size {
     display: block;
   }
+
   .heading-image img,
   .heading-image {
     max-width: 1280px;
   }
+
   .heading-image img {
     width: auto;
+  }
+
+  .sub-heading-text {
+    justify-content: flex-start;
+  }
+
+  .heading-wrapper {
+    justify-content: stretch;
   }
 }
