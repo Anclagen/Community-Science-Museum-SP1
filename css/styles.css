@@ -164,6 +164,19 @@ li a:hover:before {
   padding-left: 0;
 }
 
+.animated-logo {
+  display: none;
+}
+
+#logo-link:hover .static-logo {
+  display: none;
+}
+
+#logo-link:hover .animated-logo {
+  display: block;
+  padding-bottom: 5px;
+}
+
 .main-navigation {
   height: 100%;
 }
