@@ -30,6 +30,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -178,20 +179,18 @@ li a:hover:before {
 }
 
 nav ul {
-  display: none;
   position: absolute;
+  visibility: hidden;
   margin-top: 0px;
-  left: 0px;
   padding-left: 0;
-}
-
-nav ul li ul {
-  display: none;
-  position: relative;
+  left: -100%;
+  top: 100%;
+  transition: all 0.4s ease-in-out;
 }
 
 nav ul li {
   padding: 10px 30px;
+  background-color: var(--black);
 }
 
 header input {
@@ -204,9 +203,14 @@ header input {
   flex-direction: column;
   width: 100%;
   background: var(--black);
-  z-index: 1000;
+  visibility: visible;
 }
 
+#menu-drop-down:checked ~ ul {
+  left: 0%;
+}
+
+/*hamburger menu icon and animation*/
 .hamburger-label {
   display: block;
   position: relative;
@@ -867,6 +871,8 @@ iframe {
     margin: 0px;
     left: 0px;
     padding-left: 0;
+    transition: none;
+    visibility: visible;
   }
 
   .hamburger-label div {
