@@ -133,6 +133,7 @@ li a::before {
   bottom: 1px;
 }
 
+#current::before,
 li a:hover:before {
   width: 100%;
   background-color: var(--grey);
@@ -278,16 +279,41 @@ ul li div a {
   width: fit-content;
 }
 
-.drop-down-hover-content a::after {
-  position: absolute;
+/* exhibit icons for navigation*/
+
+.drop-down-hover-content {
+  padding-left: 25px;
+}
+
+.robotics-icon::after,
+.evolution-icon::after,
+.ecology-icon::after,
+.cosmology-icon::after,
+.biology-icon::after {
   content: "";
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-left: 5px solid var(--grey);
-  border-bottom: 5px solid transparent;
-  left: -13px;
-  top: 9px;
+  background-image: url(../images/icon_awesome_dna.png);
+  background-size: contain;
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  left: -32px;
+  top: 1px;
+}
+
+.cosmology-icon::after {
+  background-image: url(../images/icon_ionic_md_planet.png);
+}
+
+.ecology-icon::after {
+  background-image: url(../images/icon_awesome_leaf.png);
+}
+
+.evolution-icon::after {
+  background-image: url(../images/dino_icon.png);
+}
+
+.robotics-icon::after {
+  background-image: url(../images/icon_awesome_robot.png);
 }
 
 /*Footer*/
