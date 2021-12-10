@@ -575,6 +575,8 @@ footer input {
 /*fixes chrome image sizing*/
 .card-slider img {
   width: 33.3333%;
+  max-width: 423.31px;
+  max-height: 264.89px;
 }
 
 .card-item:hover .card-slider {
