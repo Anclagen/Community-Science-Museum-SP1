@@ -302,19 +302,19 @@ ul li div a {
 }
 
 .cosmology-icon::after {
-  background-image: url(../../images/icon_ionic_md_planet.png);
+  background-image: url(../images/icon_ionic_md_planet.png);
 }
 
 .ecology-icon::after {
-  background-image: url(../../images/icon_awesome_leaf.png);
+  background-image: url(../images/icon_awesome_leaf.png);
 }
 
 .evolution-icon::after {
-  background-image: url(../../images/dino_icon.png);
+  background-image: url(../images/dino_icon.png);
 }
 
 .robotics-icon::after {
-  background-image: url(../../images/icon_awesome_robot.png);
+  background-image: url(../images/icon_awesome_robot.png);
 }
 
 /*Footer*/
@@ -573,6 +573,48 @@ footer input {
 .card-double-button {
   display: flex;
   justify-content: space-between;
+}
+
+/*card auto slider on hover?*/
+.card-slider-container {
+overflow: hidden;
+}
+
+.card-slider {
+  width: 300%;
+  display: flex;
+  overflow: hidden;
+}
+
+.card-item:hover .card-slider {
+  animation-name: three-image-card-slider;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes three-image-card-slider{
+  from{
+    margin-left:0%;
+  }
+  25% {
+    margin-left:0%;
+  }
+  30% {
+    margin-left:-100%;
+  }
+  55% {
+    margin-left:-100%;
+  }
+  60% {
+    margin-left:-200%;
+  }
+  90% {
+    margin-left:-200%;
+  }
+  100% {
+    margin-left:0%;
+  }
 }
 
 /*Events page*/
