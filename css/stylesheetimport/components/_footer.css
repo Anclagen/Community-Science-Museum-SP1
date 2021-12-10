@@ -1,0 +1,127 @@
+/*Footer*/
+
+.social-media {
+  display: flex;
+}
+
+.social-media-icons {
+  width: 100%;
+}
+
+.twitter,
+.instagram,
+.facebook,
+.youtube {
+  background-image: url(../images/icon-awesome-youtube.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 48px;
+}
+
+.youtube:hover {
+  background-image: url(../images/icon-awesome-youtube-red.png);
+}
+
+.twitter {
+  background-image: url(../images/icon-awesome-twitter.png);
+}
+
+.twitter:hover {
+  background-image: url(../images/icon-awesome-twitter-blue.png);
+}
+
+.instagram {
+  background-image: url(../images/icon-awesome-instagram.png);
+}
+
+.instagram:hover {
+  background-image: url(../images/icon-awesome-instagram-purple.png);
+}
+
+.facebook {
+  background-image: url(../images/icon-awesome-facebook.png);
+}
+
+.facebook:hover {
+  background-image: url(../images/icon-awesome-facebook-blue.png);
+}
+
+footer address {
+  font-style: normal;
+}
+
+footer ul {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+footer label,
+footer h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright-symbol {
+  font-size: 2.25rem;
+  margin-right: 10px;
+}
+
+footer ul,
+footer form {
+  margin-top: 19.92px;
+}
+
+.footer-details ul {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+footer input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  opacity: 1; /*stops faded appearance*/
+}
+
+.input-container {
+  display: block;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  height: 100%;
+  background-color: var(--grey);
+  padding: 0;
+  border-radius: 5px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  border: none;
+}
+
+.email-input {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  padding: 0px 5px;
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,87 @@
+/*heading template headings*/
+
+.heading-background {
+  background: var(--black);
+}
+
+.heading-background h2,
+.heading-background h1 {
+  margin: 0 0 20px 0;
+  padding: 20px 0px;
+}
+
+.sub-heading-image img,
+.heading-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.heading-container {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.sub-heading-container {
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.heading-overlay {
+  top: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.heading-text {
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+}
+
+/*cards for pages*/
+.card-item-nohover,
+.card-item {
+  background: var(--grey);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px var(--black);
+}
+
+.card-item-grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: space-between;
+}
+
+.card-item-nohover img,
+.card-item img {
+  width: 100%;
+}
+
+.card-item-nohover h3,
+.card-item h3 {
+  margin-top: 0;
+}
+
+.card-item:hover {
+  box-shadow: 10px 10px 3px var(--black);
+  margin: 10px 10px 30px -10px;
+  transition: 0.5s;
+}
+
+/*stops hover wobble from margin cascade*/
+.card-layout-grid-double,
+.card-layout-grid {
+  display: grid;
+  gap: 0px;
+}
+
+.card-double-button {
+  display: flex;
+  justify-content: space-between;
+}

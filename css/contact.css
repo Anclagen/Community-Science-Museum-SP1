@@ -1,0 +1,57 @@
+/*contacts*/
+.booking-form,
+.query-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: auto;
+}
+
+.query-form input[type="submit"],
+.booking-form input[type="submit"] {
+  margin-top: auto;
+}
+
+.booking-form select,
+.booking-form input,
+.query-form input,
+.query-form textarea {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.booking-form input[type="submit"],
+.query-form input[type="submit"] {
+  border: 3px solid var(--orange);
+}
+
+.booking-form select {
+  background: white;
+  width: fit-content;
+}
+
+.booking-form input[type="date"] {
+  width: fit-content;
+}
+
+.query-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.booking-form input[type="number"] {
+  width: 25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,86 @@
+/*exhibits page*/
+
+.heading-text-exhibits h1 {
+  margin-bottom: 0;
+}
+.exhibits-grid {
+  background-color: var(--black);
+  height: fit-content;
+}
+
+.exhibits-grid p {
+  color: var(--grey);
+}
+
+.exhibits-images {
+  position: relative;
+  overflow: hidden;
+  max-height: 350px;
+}
+
+.exhibits-images img {
+  width: 100%;
+}
+
+.exhibits-image-overlay {
+  top: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.bottom-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.exhibits-text {
+  max-width: 500px;
+}
+
+@media only screen and (min-width: 905px) {
+  .exhibits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .bottom-overlay {
+    background: linear-gradient(-0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  .exhibits-image-overlay {
+    background: linear-gradient(-0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  .exhibits-images {
+    position: relative;
+    overflow: hidden;
+    max-height: fit-content;
+  }
+
+  .exhibits-images img {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .exhibits-text {
+    min-height: 450px;
+  }
+
+  .exhibits-background {
+    width: 100%;
+    background-color: var(--black);
+  }
+
+  .exhibits-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
