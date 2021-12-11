@@ -572,6 +572,7 @@ footer input {
 .card-slider img {
   width: 33.3333%;
   object-fit: cover;
+  aspect-ratio: 660/413;
 }
 
 .card-item:hover .card-slider {
