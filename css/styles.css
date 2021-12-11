@@ -54,12 +54,8 @@ header {
 
 header {
   height: 95px;
-  position: fixed;
   z-index: 1000;
-}
-
-main {
-  margin-top: 95px;
+  position: relative;
 }
 
 p a {
@@ -575,6 +571,7 @@ footer input {
 /*fixes chrome image sizing*/
 .card-slider img {
   width: 33.3333%;
+  object-fit: cover;
 }
 
 .card-item:hover .card-slider {
@@ -639,7 +636,7 @@ iframe {
   }
 }
 
-@media only screen and (min-width: 875px) {
+@media only screen and (min-width: 905px) {
   /*updated heading sizes for big screens*/
   :root {
     --h1: normal 600 3.75rem "Outfit", sans-serif;
@@ -709,10 +706,6 @@ iframe {
     position: relative;
   }
 
-  main {
-    margin-top: 0px;
-  }
-
   /*fix drop down when expanding to desktop*/
   #menu-drop-down:checked ~ ul,
   nav ul,
@@ -739,16 +732,11 @@ iframe {
     justify-content: center;
   }
 
-  nav ul li:nth-last-of-type(3),
-  nav ul li:nth-last-of-type(7) {
-    margin-left: auto;
-  }
-
   nav ul li {
     margin: 0;
     text-decoration: none;
     list-style-type: none;
-    padding: 10px 10px 3px 10px;
+    padding: 10px 8px 3px 8px;
     margin-bottom: 10px;
   }
 
@@ -773,6 +761,10 @@ iframe {
     font-size: 1.7rem;
   }
 
+  nav ul li:nth-last-of-type(9) {
+    margin-right: 20px;
+  } /*contacts clicks scroll bar*/
+
   /*footer*/
 
   .footer-container {
@@ -796,18 +788,22 @@ iframe {
     width: 100%;
     height: 600px;
   }
-}
 
-@media only screen and (min-width: 905px) {
   /*header adjustments*/
   .header-wrapper {
     max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
   }
   /*big screen grid*/
   .card-layout-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  nav ul li:nth-last-of-type(3),
+  nav ul li:nth-last-of-type(7) {
+    margin-left: auto;
   }
 }
 
