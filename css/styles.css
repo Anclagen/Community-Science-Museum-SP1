@@ -568,11 +568,12 @@ footer input {
   overflow: hidden;
 }
 
-/*fixes chrome image sizing*/
+/*fixes chrome/safari image sizing*/
 .card-slider img {
   width: 33.3333%;
   object-fit: cover;
   aspect-ratio: 660/413;
+  max-height: 53vw;
 }
 
 .card-item:hover .card-slider {
@@ -635,6 +636,10 @@ iframe {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+
+  .card-slider img {
+    max-height: 25vw;
+  }
 }
 
 @media only screen and (min-width: 905px) {
@@ -642,6 +647,10 @@ iframe {
   :root {
     --h1: normal 600 3.75rem "Outfit", sans-serif;
     --h2: normal 700 3.125rem "Outfit", sans-serif;
+  }
+
+  .card-slider img {
+    max-height: 16vw;
   }
 
   /*heading template*/
@@ -809,6 +818,10 @@ iframe {
 }
 
 @media only screen and (min-width: 1300px) {
+  .card-slider img {
+    max-height: 264.9px;
+  }
+
   /*headers to 1920 width for full screen*/
   .heading-wrapper {
     max-width: 1920px;
