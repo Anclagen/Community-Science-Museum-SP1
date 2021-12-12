@@ -54,7 +54,7 @@
   .exhibits-images {
     position: relative;
     overflow: hidden;
-    max-height: fit-content;
+    max-height: 100%;
   }
 
   .exhibits-images img {
