@@ -568,12 +568,11 @@ footer input {
   overflow: hidden;
 }
 
-/*fixes chrome/safari image sizing*/
 .card-slider img {
-  width: 33.3333%;
+  width: calc(100% / 3);
   object-fit: cover;
-  aspect-ratio: 660/413;
-  max-height: 53vw;
+  aspect-ratio: 660/413; /*safari ignores?*/
+  max-height: 53vw; /*fixes safari image sizing*/
 }
 
 .card-item:hover .card-slider {
