@@ -729,7 +729,7 @@ iframe {
     visibility: visible;
   }
 
-  .hamburger-label div {
+  .hamburger-label {
     display: none;
   }
 
