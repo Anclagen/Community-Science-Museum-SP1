@@ -120,3 +120,9 @@
     border-bottom: 20px solid transparent;
   }
 }
+
+@media only screen and (min-width: 905px) {
+  .heading-image img {
+    bottom: auto;
+  }
+}
