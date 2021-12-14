@@ -12,10 +12,9 @@
   --h3: normal 700 1.5rem "Outfit", sans-serif;
   --body: normal 500 1rem "Outfit", sans-serif;
   --cta: normal 700 1.25rem "Lato", sans-serif;
-
-  /*other stuff for general use*/
 }
 
+/*General text, link and background styles*/
 body {
   margin: 0;
   font: var(--body);
@@ -23,11 +22,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   overflow-x: hidden;
-}
-
-h3 {
-  color: var(--black);
-  font: var(--h3);
 }
 
 h1 {
@@ -46,16 +40,15 @@ footer {
   color: var(--grey);
 }
 
+h3 {
+  color: var(--black);
+  font: var(--h3);
+}
+
 footer,
 header {
   background: var(--black);
   width: 100%;
-}
-
-header {
-  height: 95px;
-  z-index: 1000;
-  position: relative;
 }
 
 p a {
@@ -81,46 +74,18 @@ footer a {
   font-size: 1.25rem;
 }
 
-.cta {
-  font: var(--cta);
-  color: white;
-}
-
-.page-wrapper-small,
 .page-wrapper {
   max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
 
-.page-wrapper-small {
-  max-width: 900px;
-}
+/*        navigation bar        */
 
-.header-full-size {
-  display: none;
-}
-/*navigation bar*/
-
-li a {
+header {
+  height: 95px;
+  z-index: 1000;
   position: relative;
-}
-
-li a::before {
-  content: "";
-  width: 1%;
-  height: 2px;
-  background-color: var(--black);
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-}
-
-#current::before,
-li a:hover:before {
-  width: 100%;
-  background-color: var(--grey);
-  transition: 0.5s;
 }
 
 .header-bar {
@@ -148,6 +113,41 @@ li a:hover:before {
   padding-left: 0;
 }
 
+.main-navigation {
+  height: 100%;
+}
+
+.top-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/*link hover underline animation*/
+
+li a {
+  position: relative;
+}
+
+li a::before {
+  content: "";
+  width: 1%;
+  height: 2px;
+  background-color: var(--black);
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+}
+
+#current::before,
+li a:hover:before {
+  width: 100%;
+  background-color: var(--grey);
+  transition: 0.5s;
+}
+
+/*logo hover*/
+
 .animated-logo {
   display: none;
 }
@@ -160,21 +160,7 @@ li a:hover:before {
   display: block;
   padding-bottom: 5px;
 }
-
-.main-navigation {
-  height: 100%;
-}
-
-.main-navigation label {
-  align-items: center;
-}
-
-.top-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
+/*hamburger drop down*/
 nav ul {
   position: absolute;
   visibility: hidden;
@@ -208,6 +194,11 @@ header input {
 }
 
 /*hamburger menu icon and animation*/
+
+.main-navigation label {
+  align-items: center;
+}
+
 .hamburger-label {
   display: block;
   position: relative;
@@ -263,7 +254,7 @@ ul li div a {
   width: fit-content;
 }
 
-/* exhibit icons for navigation*/
+/*exhibit icons for navigation*/
 
 .drop-down-hover-content {
   padding-left: 25px;
@@ -300,57 +291,7 @@ ul li div a {
   background-image: url(../images/icon_awesome_robot.png);
 }
 
-/*Footer*/
-
-.social-media {
-  display: flex;
-}
-
-.social-media-icons {
-  width: 100%;
-}
-
-.twitter,
-.instagram,
-.facebook,
-.youtube {
-  background-image: url(../images/icon-awesome-youtube.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 48px;
-}
-
-.youtube:hover {
-  background-image: url(../images/icon-awesome-youtube-red.png);
-}
-
-.twitter {
-  background-image: url(../images/icon-awesome-twitter.png);
-}
-
-.twitter:hover {
-  background-image: url(../images/icon-awesome-twitter-blue.png);
-}
-
-.instagram {
-  background-image: url(../images/icon-awesome-instagram.png);
-}
-
-.instagram:hover {
-  background-image: url(../images/icon-awesome-instagram-purple.png);
-}
-
-.facebook {
-  background-image: url(../images/icon-awesome-facebook.png);
-}
-
-.facebook:hover {
-  background-image: url(../images/icon-awesome-facebook-blue.png);
-}
-
-footer address {
-  font-style: normal;
-}
+/*      Footer      */
 
 footer ul {
   margin: 0 0 20px 0;
@@ -368,6 +309,32 @@ footer h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
+/*social media icons*/
+.social-media {
+  display: flex;
+}
+
+.social-media-icons,
+.social-media-icons img {
+  margin-right: 10px;
+  max-height: 40px;
+}
+
+.social-media a:hover .social-normal,
+.social-hover {
+  display: none;
+}
+
+.social-media a:hover .social-hover {
+  display: block;
+}
+
+/* address */
+footer address {
+  font-style: normal;
+}
+
+/*Copyright at the bottom*/
 
 .copyright {
   justify-content: center;
@@ -385,6 +352,8 @@ footer h2 {
   font-size: 2.25rem;
   margin-right: 10px;
 }
+
+/*email sign up*/
 
 footer ul,
 footer form {
@@ -428,12 +397,12 @@ footer input {
   outline: none;
 }
 
-/*button stylings*/
+/*      Components      */
+
+/*button stylings */
 
 .cta {
-  font-family: "Lato", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
+  font: var(--cta);
   text-decoration: none;
   display: block;
   text-align: center;
@@ -471,6 +440,10 @@ footer input {
 }
 
 /*heading template*/
+
+.header-full-size {
+  display: none;
+}
 
 .heading-background {
   background: var(--black);
@@ -551,7 +524,7 @@ footer input {
   justify-content: space-between;
 }
 
-/*stops hover wobble from margin cascade*/
+/*Card grid needed to stops hover wobble from margin cascade*/
 .card-layout-grid-double,
 .card-layout-grid {
   display: grid;
@@ -637,76 +610,29 @@ iframe {
     gap: 20px;
   }
 
+  /*Cards; fix safari stretching images for no reason*/
   .card-slider img {
     max-height: 25vw;
   }
 }
 
-@media only screen and (min-width: 905px) {
+@media only screen and (min-width: 900px) {
   /*updated heading sizes for big screens*/
   :root {
     --h1: normal 600 3.75rem "Outfit", sans-serif;
     --h2: normal 700 3.125rem "Outfit", sans-serif;
   }
 
-  .card-slider img {
-    max-height: 16vw;
+  /* Navigation */
+
+  nav ul li:nth-last-of-type(3),
+  nav ul li:nth-last-of-type(7) {
+    margin-left: auto;
   }
 
-  /*heading template*/
-  .heading-container {
-    max-height: 500px;
-  }
-
-  .sub-heading-container {
-    max-height: 400px;
-  }
-
-  .heading-overlay {
-    top: 0%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 1) 100%);
-  }
-  .sub-heading-wrapper,
-  .heading-wrapper {
-    max-width: 1300px;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .sub-heading-image,
-  .heading-image {
-    flex: 2;
-    width: 66.67vw;
-    max-width: 800px;
-    position: relative;
-    height: 500px;
-  }
-
-  .sub-heading-image {
-    height: 300px;
-  }
-
-  .heading-image img {
-    position: absolute;
-    bottom: 0%;
-    width: 79vw;
-    max-width: 800px;
-  }
-
-  .heading-text {
-    flex: 1;
-    max-width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 50px;
-  }
+  nav ul li:nth-last-of-type(9) {
+    margin-right: 20px;
+  } /*contacts clicks scroll bar*/
 
   header label {
     display: none;
@@ -750,6 +676,8 @@ iframe {
     margin-bottom: 10px;
   }
 
+  /*exhibits hover*/
+
   .drop-down-hover-content {
     display: none;
   }
@@ -771,9 +699,12 @@ iframe {
     font-size: 1.7rem;
   }
 
-  nav ul li:nth-last-of-type(9) {
-    margin-right: 20px;
-  } /*contacts clicks scroll bar*/
+  /*header adjustments*/
+  .header-wrapper {
+    max-width: 1200px;
+    width: 96%;
+    margin: 0 auto;
+  }
 
   /*footer*/
 
@@ -792,18 +723,67 @@ iframe {
     margin-left: 20px;
   }
 
-  /*visit us page*/
+  /*    Components      */
 
-  iframe {
-    width: 100%;
-    height: 600px;
+  /*Cards; fix safari stretching images for no reason*/
+  .card-slider img {
+    max-height: 16vw;
   }
 
-  /*header adjustments*/
-  .header-wrapper {
-    max-width: 1200px;
-    width: 96%;
+  /*heading template*/
+  .heading-container {
+    max-height: 500px;
+  }
+
+  .sub-heading-container {
+    max-height: 400px;
+  }
+
+  .heading-overlay {
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  .sub-heading-wrapper,
+  .heading-wrapper {
+    max-width: 1300px;
+    width: 95%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .sub-heading-image,
+  .heading-image {
+    flex: 2;
+    width: 66.67vw;
+    max-width: 800px;
+    position: relative;
+    height: 500px;
+  }
+
+  .sub-heading-image {
+    height: 300px;
+  }
+
+  .heading-image img {
+    position: absolute;
+    bottom: 0%;
+    width: 79vw;
+    max-width: 800px;
+  }
+
+  .heading-text {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
   }
 
   /*big screen grid*/
@@ -812,13 +792,16 @@ iframe {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  nav ul li:nth-last-of-type(3),
-  nav ul li:nth-last-of-type(7) {
-    margin-left: auto;
+  /*visit us page*/
+
+  iframe {
+    width: 100%;
+    height: 600px;
   }
 }
 
 @media only screen and (min-width: 1300px) {
+  /*Cards; fix safari stretching images for no reason*/
   .card-slider img {
     max-height: 264.7333px;
   }

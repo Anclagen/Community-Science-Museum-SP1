@@ -109,7 +109,7 @@
               <label for="email-booking">Email*</label>
               <input type="email" id="email-booking" name="email-booking" required="" />
               <label for="date">Date &#10098;dd/mm/yyyy&#10099;</label>
-              <input type="date" name="date" id="date" />
+              <input type="date" name="date" id="date" min="2021-12-20" />
               <label for="time">Time:</label>
               <select name="time" id="time">
                 <option value="10:00">10:00</option>
@@ -119,8 +119,8 @@
                 <option value="14:00">14:00</option>
                 <option value="15:00">15:00</option>
               </select>
-              <label for="party-size">Party Size</label>
-              <input type="number" name="party-size" id="party-size" required="" />
+              <label for="party-size">Party Size <span data-tool-tip="Parties of 6 to 50 people, for more, multiple tour groups can be booked at the same time.">?</span></label>
+              <input type="number" name="party-size" id="party-size" required="" min="6" max="50" />
               <input type="submit" value="Book" class="cta cta-orange" />
             </form>
           </div>
@@ -135,10 +135,22 @@
               <div>
                 <h2>Social Media</h2>
                 <div class="social-media">
-                  <a href="#" class="social-media-icons"><div class="youtube"></div></a>
-                  <a href="#" class="social-media-icons"><div class="twitter"></div></a>
-                  <a href="#" class="social-media-icons"><div class="instagram"></div></a>
-                  <a href="#" class="social-media-icons"><div class="facebook"></div></a>
+                  <a href="#" class="social-media-icons">
+                    <img src="images/icon-awesome-youtube.png" class="social-normal" alt="Youtube icon" />
+                    <img src="images/icon-awesome-youtube-red.png" class="social-hover" alt="Youtube icon" />
+                  </a>
+                  <a href="#" class="social-media-icons">
+                    <img src="images/icon-awesome-twitter.png" class="social-normal" alt="Twitter icon" />
+                    <img src="images/icon-awesome-twitter-blue.png" class="social-hover" alt="Twitter icon" />
+                  </a>
+                  <a href="#" class="social-media-icons">
+                    <img src="images/icon-awesome-instagram.png" class="social-normal" alt="Instagram icon" />
+                    <img src="images/icon-awesome-instagram-purple.png" class="social-hover" alt="Instagram icon" />
+                  </a>
+                  <a href="#" class="social-media-icons">
+                    <img src="images/icon-awesome-facebook.png" class="social-normal" alt="Facebook icon" />
+                    <img src="images/icon-awesome-facebook-blue.png" class="social-hover" alt="Facebook icon" />
+                  </a>
                 </div>
               </div>
               <div>

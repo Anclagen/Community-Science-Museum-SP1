@@ -37,7 +37,7 @@
   max-width: 500px;
 }
 
-@media only screen and (min-width: 905px) {
+@media only screen and (min-width: 900px) {
   .exhibits-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

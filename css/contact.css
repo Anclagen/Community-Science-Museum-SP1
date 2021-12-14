@@ -64,3 +64,35 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+[data-tool-tip] {
+  position: relative;
+  bottom: 2px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  background-color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  border: 2px solid var(--black);
+  margin-left: 5px;
+}
+
+[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  font-size: 0.7rem;
+  position: absolute;
+  background: var(--grey);
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  bottom: 120%;
+  left: 50%;
+  width: 160px;
+  display: none;
+  box-shadow: 5px 5px 3px var(--black);
+}
+
+[data-tool-tip]:hover::after {
+  display: block;
+}
