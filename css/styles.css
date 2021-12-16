@@ -237,9 +237,11 @@ header input {
   top: 30px;
   width: 15vw;
 }
+
 #menu-drop-down:checked + label > .line2 {
   background-color: transparent;
 }
+
 #menu-drop-down:checked + label > .line3 {
   transform: rotate(-45deg);
   top: 30px;
@@ -546,7 +548,7 @@ footer input {
   width: calc(100% / 3);
   object-fit: cover;
   aspect-ratio: 660/413; /*safari ignores?*/
-  max-height: 53vw; /*fixes safari image sizing*/
+  max-height: 53vw; /*fixes safari image sizing the crude way*/
 }
 
 .card-item:hover .card-slider {
@@ -602,7 +604,7 @@ iframe {
     font-size: 3.1vw;
   }
 
-  /* double grid*/
+  /* double grid */
   .card-layout-grid-double,
   .card-layout-grid {
     display: grid;
@@ -787,6 +789,7 @@ iframe {
   }
 
   /*big screen grid*/
+  .exhibits-grid.exhibits-grid,
   .card-layout-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

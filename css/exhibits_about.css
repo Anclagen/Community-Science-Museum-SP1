@@ -2,6 +2,7 @@
 .heading-background h1 {
   margin-bottom: 0;
 }
+
 .exhibits-grid {
   background-color: var(--black);
   height: fit-content;
@@ -14,7 +15,7 @@
 .exhibits-images {
   position: relative;
   overflow: hidden;
-  max-height: 350px;
+  max-height: 400px;
 }
 
 .exhibits-images img {
@@ -34,13 +35,26 @@
 }
 
 .exhibits-text {
-  max-width: 500px;
+  max-width: 600px;
+}
+
+@media only screen and (min-width: 700px) {
+  /*image adjustments as needed*/
+  .centre-image {
+    position: relative;
+    bottom: calc(10vw - 50px);
+  }
+
+  /* header image adjustments for tablets*/
+  .header-medium-size {
+    position: relative;
+    bottom: 16vw;
+  }
 }
 
 @media only screen and (min-width: 900px) {
-  .exhibits-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .centre-image {
+    bottom: auto;
   }
 
   .bottom-overlay {
@@ -69,6 +83,15 @@
     transform: translate(-50%, -50%);
   }
 
+  /*image adjustments as needed*/
+  .exhibits-images img.right-shift-image {
+    left: 75%;
+  }
+
+  .exhibits-images img.left-shift-image {
+    left: 15%;
+  }
+
   .exhibits-text {
     min-height: 450px;
   }
@@ -81,5 +104,13 @@
   .exhibits-wrapper {
     max-width: 1920px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  /*correcting image adjustments for full screen*/
+  .exhibits-images img.left-shift-image,
+  .exhibits-images img.right-shift-image {
+    left: 50%;
   }
 }

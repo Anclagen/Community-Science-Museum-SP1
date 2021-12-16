@@ -124,6 +124,12 @@
     max-width: 700px;
     margin: 0 auto;
   }
+
+  /* header image adjustments for tablets*/
+  .header-medium-size {
+    position: relative;
+    bottom: 10vw;
+  }
 }
 
 @media only screen and (min-width: 900px) {
