@@ -40,9 +40,13 @@ footer {
   color: var(--grey);
 }
 
+.card-item-nohover h2,
+.card-layout-grid-double h2,
+.card-layout-grid h2,
 h3 {
   color: var(--black);
   font: var(--h3);
+  margin-top: 0;
 }
 
 footer,
@@ -510,11 +514,6 @@ footer input {
   width: 100%;
 }
 
-.card-item-nohover h3,
-.card-item h3 {
-  margin-top: 0;
-}
-
 .card-item:hover {
   box-shadow: 10px 10px 3px var(--black);
   margin: 10px 10px 30px -10px;
@@ -546,7 +545,6 @@ footer input {
 
 .card-slider img {
   width: calc(100% / 3);
-
   aspect-ratio: 660/413; /*safari ignores?*/
   max-height: 53vw; /*fixes safari image sizing the crude way*/
 }
