@@ -546,9 +546,8 @@ footer input {
 
 .card-slider img {
   width: calc(100% / 3);
-  object-fit: cover;
   aspect-ratio: 660/413; /*safari ignores?*/
-  max-height: 53vw; /*fixes safari image sizing the crude way*/
+  /* max-height: 53vw; /*fixes safari image sizing the crude way*/
 }
 
 .card-item:hover .card-slider {
@@ -613,9 +612,9 @@ iframe {
   }
 
   /*Cards; fix safari stretching images for no reason*/
-  .card-slider img {
+  /*.card-slider img {
     max-height: 25vw;
-  }
+  }*/
 }
 
 @media only screen and (min-width: 900px) {
@@ -728,9 +727,9 @@ iframe {
   /*    Components      */
 
   /*Cards; fix safari stretching images for no reason*/
-  .card-slider img {
+  /*.card-slider img {
     max-height: 16vw;
-  }
+  }*/
 
   /*heading template*/
   .heading-container {

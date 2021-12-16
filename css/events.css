@@ -56,7 +56,6 @@
 .slider {
   display: flex;
   width: 500%;
-  white-space: nowrap;
 }
 
 .slider input[type="radio"] {
