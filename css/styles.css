@@ -560,22 +560,25 @@ footer input {
   from {
     margin-left: 0%;
   }
-  10% {
+  3% {
     margin-left: 0%;
   }
-  20% {
+  13% {
     margin-left: -100%;
   }
-  40% {
+  36% {
     margin-left: -100%;
   }
-  50% {
+  46% {
     margin-left: -200%;
   }
-  70% {
+  69% {
     margin-left: -200%;
   }
-  90% {
+  79% {
+    margin-left: 0%;
+  }
+  100% {
     margin-left: 0%;
   }
 }
