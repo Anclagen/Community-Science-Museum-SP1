@@ -464,10 +464,10 @@ footer input {
 
 .sub-heading-image img,
 .heading-image img {
-  object-fit: cover;
   width: 100%;
 }
 
+.sub-heading-container,
 .heading-container {
   position: relative;
   max-height: 400px;
@@ -475,9 +475,7 @@ footer input {
 }
 
 .sub-heading-container {
-  position: relative;
   max-height: 300px;
-  overflow: hidden;
 }
 
 .heading-overlay {

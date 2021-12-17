@@ -16,6 +16,7 @@
 @media only screen and (min-width: 1300px) {
   /*sub-heading adjustments*/
   .sub-heading-image img {
-    object-position: 0 -50px;
+    position: relative;
+    bottom: 50px;
   }
 }

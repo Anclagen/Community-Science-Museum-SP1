@@ -135,4 +135,33 @@
   .heading-image img {
     bottom: auto;
   }
+
+  .left-arrow,
+  .right-arrow {
+    width: 6%;
+  }
+
+  .left-arrow-head {
+    border-top: 25px solid transparent;
+    border-right: 25px solid var(--black);
+    border-bottom: 25px solid transparent;
+    top: 50%;
+    left: 1.5%;
+  }
+
+  .right-arrow-head {
+    right: 1.5%;
+    border-top: 25px solid transparent;
+    border-left: 25px solid var(--black);
+    border-bottom: 25px solid transparent;
+  }
+
+  label:hover span.left-arrow,
+  label:hover span.right-arrow {
+    background: #ffffff90;
+  }
+
+  .image-carousel-buttons label:hover {
+    background-color: var(--purple);
+  }
 }
