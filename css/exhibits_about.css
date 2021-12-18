@@ -5,7 +5,6 @@
 
 .exhibits-grid {
   background-color: var(--black);
-  height: fit-content;
 }
 
 .exhibits-grid p {
@@ -38,17 +37,15 @@
   max-width: 600px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   /*image adjustments as needed*/
   .centre-image {
-    position: relative;
-    bottom: calc(10vw - 50px);
+    bottom: calc(10vw - 70px);
   }
 
   /* header image adjustments for tablets*/
   .header-medium-size {
-    position: relative;
-    bottom: 16vw;
+    bottom: calc(20vw - 85px);
   }
 }
 
@@ -66,7 +63,6 @@
   }
 
   .exhibits-images {
-    position: relative;
     overflow: hidden;
     max-height: 100%;
   }
@@ -76,11 +72,9 @@
     display: block;
     width: auto;
     height: 100%;
-    margin: auto;
-    top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -ms-transform: translatex(-50%);
+    transform: translatex(-50%);
   }
 
   /*image adjustments as needed*/
