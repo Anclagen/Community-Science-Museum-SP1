@@ -377,7 +377,7 @@ footer input {
   appearance: none;
   border-radius: 0;
   margin: 0;
-  opacity: 1; /*stops faded appearance*/
+  opacity: 1; /*stops faded appearance on safari*/
 }
 
 .input-container {
@@ -427,6 +427,7 @@ footer input {
   border: 3px solid var(--orange);
 }
 
+/*footer email button move here to override cta stylings*/
 .submit-button {
   position: absolute;
   top: 0%;

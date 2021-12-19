@@ -59,6 +59,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+/*party tool tip*/
 [data-tool-tip] {
   position: relative;
   bottom: 2px;
