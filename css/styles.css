@@ -164,6 +164,7 @@ li a:hover:before {
   display: block;
   padding-bottom: 5px;
 }
+
 /*hamburger drop down*/
 nav ul {
   position: absolute;
@@ -236,20 +237,19 @@ header input {
   top: 50px;
 }
 
+#menu-drop-down:checked + label > .line2 {
+  background-color: transparent;
+}
+
+#menu-drop-down:checked + label > .line3,
 #menu-drop-down:checked + label > .line1 {
   transform: rotate(45deg);
   top: 30px;
   width: 15vw;
 }
 
-#menu-drop-down:checked + label > .line2 {
-  background-color: transparent;
-}
-
 #menu-drop-down:checked + label > .line3 {
   transform: rotate(-45deg);
-  top: 30px;
-  width: 15vw;
 }
 
 ul li div a {
