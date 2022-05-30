@@ -1,4 +1,4 @@
-# Your project title
+# Community Science Museum, semester project 1
 
 ![Homepage Preview](/report_documentation/site_preview.jpg)
 
