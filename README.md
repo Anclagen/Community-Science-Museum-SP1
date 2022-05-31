@@ -2,7 +2,7 @@
 
 ![Homepage Preview](/report_documentation/site_preview.jpg)
 
-A fictional project for a Community Science Museum, as part of my first year semester project from Noroff
+A fictional project for a Community Science Museum, as part of my first year semester project from Noroff.
 
 ## Description
 
