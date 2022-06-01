@@ -14,6 +14,9 @@ Development Stages
 - Create website in HTML5 and CSS3.
 - User test and improve the current design.
 
+
+[Live Version](https://goofy-einstein-7890a6.netlify.app/)
+
 ## Built With
 
 - ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&logoWidth=30&style=plastic)
@@ -25,7 +28,8 @@ Development Stages
 
 ## Getting Started
 
-[Live Version](https://goofy-einstein-7890a6.netlify.app/)
+-Clone the repo:
+`https://github.com/Anclagen/Community-Science-Museum-SP1.git`
 
 ## Contact
 
