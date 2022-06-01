@@ -6,10 +6,9 @@ A fictional project for a Community Science Museum, as part of my first year sem
 
 ## Description
 
-The aim of the project was to create a website for a local Community Science Museum, aimed predominately at primary and middle school children
+The aim of the project was to create a website for a local Community Science Museum, aimed predominately at primary/middle school children aged 7-15 as well as families with young childern. We were to only use HTML and CSS to achieve this, the site needed to be responsive and look good from mobile upto destop screen sizes. 
 
 Development Stages
-
 - Design website in adobeXD.
 - User test XD prototype.
 - Create website in HTML5 and CSS3.
@@ -35,8 +34,8 @@ None, necessary.
 ## Contact
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My LinkedIn page](https://www.linkedin.com/in/alexander-barrett-64568a47/)
+[<img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">](https://discordapp.com/users/178264761199362048)
+[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/alexander-barrett-64568a47/)
 
 ## License
 
