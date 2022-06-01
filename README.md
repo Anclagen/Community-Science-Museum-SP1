@@ -28,7 +28,9 @@ Development Stages
 
 ## Getting Started
 
--Clone the repo:
+- Clone the repo:
+
+
 `https://github.com/Anclagen/Community-Science-Museum-SP1.git`
 
 ## Contact
