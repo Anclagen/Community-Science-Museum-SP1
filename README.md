@@ -31,7 +31,7 @@ Development Stages
 1. Simply clone the repo:
 
 ```bash
-https://github.com/Anclagen/Community-Science-Museum-SP1.git
+git clone https://github.com/Anclagen/Community-Science-Museum-SP1.git
 ```
 
 ## Contributing
