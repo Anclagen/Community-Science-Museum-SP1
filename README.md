@@ -28,15 +28,16 @@ Development Stages
 
 ## Getting Started
 
-1. Simply clone the repo:
+1. Download the zip of the project or clone the repo with GitHub desktop/the terminal in vsc:
 
 ```bash
 git clone https://github.com/Anclagen/Community-Science-Museum-SP1.git
 ```
+2. Open in Visual Studio Code and use the Live Server Preview extension to view the site.
 
 ## Contributing
 
-This project requires no contrubutions.
+This project requires no contributions. Although any suggestions and feedback are welcomed to help me improve in future projects.
 
 ## Contact
 
@@ -44,6 +45,9 @@ This project requires no contrubutions.
 
 
 [<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/alexander-barrett-64568a47/)
+
+
+[<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">](mailto:alexanderbarrett189@gmail.com)
 
 ## License
 
