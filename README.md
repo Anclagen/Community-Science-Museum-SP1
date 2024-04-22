@@ -15,7 +15,7 @@ Development Stages
 - User test and improve the current design.
 
 
-[Live Version](https://goofy-einstein-7890a6.netlify.app/)
+[Live Version](https://science-museum-alexander-barrett.netlify.app/)
 
 ## Built With
 
